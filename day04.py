@@ -10,13 +10,13 @@ def valid(passphrase):
     
 def anagrams(words):
     """finds all sets of anagrams in words"""
-    def f(word):
+    def key(word):
         return ''.join(sorted(word))
     
     anagram_registry = defaultdict(list)
     
     for word in words:
-        anagram_registry[f(word)].append(word)
+        anagram_registry[key(word)].append(word)
     
     return anagram_registry.values()
     
