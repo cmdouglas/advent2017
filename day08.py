@@ -48,11 +48,7 @@ def part2():
             highest_value = max(highest_value, regs.get(reg, 0))
     
     print(highest_value)
-        
-        
+
 if __name__ == '__main__':
     part1()
     part2()
-            
-    
-    
