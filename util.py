@@ -20,7 +20,6 @@ def neighbors8(p):
             (x-1, y), (x-1, y-1), (x, y-1), (x+1, y-1)
     ]
 
-
 def a_star(start, goal, moves_func, h_func):
     frontier = [(h_func(start), start)]
     previous = {start: None}

@@ -13,7 +13,7 @@ def value_at(grid, point):
     x, y = point
     
     if x < 0 or x > 127 or y < 0 or y > 127:
-        return 0
+        return '0'
     
     return grid[y][x]
     
@@ -23,7 +23,6 @@ def fill_region(p, grid, region):
         for p2 in neighbors4(p):
             fill_region(p2, grid, region)
     
-
 def part1():
     hash_input = 'ffayrhll'
     grid = generate_grid(hash_input)
